@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter03_02_mile_to_kilometer_conversion", "chapter03_02_mile_to_kilometer_conversion\chapter03_02_mile_to_kilometer_conversion.vcxproj", "{1B20E46E-F934-431E-A5C1-C417792BBBF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B20E46E-F934-431E-A5C1-C417792BBBF9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B20E46E-F934-431E-A5C1-C417792BBBF9}.Debug|Win32.Build.0 = Debug|Win32
+		{1B20E46E-F934-431E-A5C1-C417792BBBF9}.Release|Win32.ActiveCfg = Release|Win32
+		{1B20E46E-F934-431E-A5C1-C417792BBBF9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

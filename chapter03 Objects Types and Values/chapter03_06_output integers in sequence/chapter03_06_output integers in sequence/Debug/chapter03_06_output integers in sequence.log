@@ -1,0 +1,28 @@
+﻿Build started 19.06.2017 17.13.01.
+     1>Project "C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\chapter03_06_output integers in sequence\chapter03_06_output integers in sequence.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\chapter03_06_output integers in sequence.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\chapter03_06_output integers in sequence.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "chapter03_06_output integers in sequence.cpp"
+         chapter03_06_output integers in sequence.cpp
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\Debug\chapter03_06_output integers in sequence.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\chapter03_06_output integers in sequence.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\Debug\chapter03_06_output integers in sequence.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\Debug\chapter03_06_output integers in sequence.lib" /MACHINE:X86 "Debug\chapter03_06_output integers in sequence.exe.embed.manifest.res"
+         "Debug\chapter03_06_output integers in sequence.obj"
+         Debug\stdafx.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\chapter03_06_output integers in sequence.exe.embed.manifest" /manifest "Debug\chapter03_06_output integers in sequence.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         chapter03_06_output integers in sequence.vcxproj -> C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\Debug\chapter03_06_output integers in sequence.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\chapter03_06_output integers in sequence.unsuccessfulbuild".
+         Touching "Debug\chapter03_06_output integers in sequence.lastbuildstate".
+     1>Done Building Project "C:\Users\127464\Documents\Visual Studio 2010\Projects\chapter03_06_output integers in sequence\chapter03_06_output integers in sequence\chapter03_06_output integers in sequence.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.69
