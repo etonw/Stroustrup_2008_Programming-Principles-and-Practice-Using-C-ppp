@@ -8,7 +8,7 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int miles, kilometers;
-	cout << "This program converts miles to kilometers.\n";
+	cout << "This program CONVERTS miles to kilometers.\n";
 	cout << "\nEnter a number of miles: ";
 	cin >> miles;
 	kilometers = miles*1.609;
