@@ -9,7 +9,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	double val1,val2;
 	double smallest, largest, sum, difference1, difference2, product, ratio1, ratio2; 
-	cout << "Enter two integers: :";
+	cout << "Enter TWO integers: :";
 	cin >> val1 >> val2;
 	
 	if (val1 > val2) {
