@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter03_08_determine if odd or even", "chapter03_08_determine if odd or even\chapter03_08_determine if odd or even.vcxproj", "{7D9E55D2-8649-4F93-A6C7-4028E5B8598F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D9E55D2-8649-4F93-A6C7-4028E5B8598F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D9E55D2-8649-4F93-A6C7-4028E5B8598F}.Debug|Win32.Build.0 = Debug|Win32
+		{7D9E55D2-8649-4F93-A6C7-4028E5B8598F}.Release|Win32.ActiveCfg = Release|Win32
+		{7D9E55D2-8649-4F93-A6C7-4028E5B8598F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
