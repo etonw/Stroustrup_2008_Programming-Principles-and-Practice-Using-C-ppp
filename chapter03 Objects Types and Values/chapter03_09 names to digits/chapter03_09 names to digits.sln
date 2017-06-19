@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter03_09 names to digits", "chapter03_09 names to digits\chapter03_09 names to digits.vcxproj", "{4B218854-87C0-4A42-8EBE-053692AA1388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B218854-87C0-4A42-8EBE-053692AA1388}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B218854-87C0-4A42-8EBE-053692AA1388}.Debug|Win32.Build.0 = Debug|Win32
+		{4B218854-87C0-4A42-8EBE-053692AA1388}.Release|Win32.ActiveCfg = Release|Win32
+		{4B218854-87C0-4A42-8EBE-053692AA1388}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
