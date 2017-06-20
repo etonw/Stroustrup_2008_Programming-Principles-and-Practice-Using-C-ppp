@@ -3,7 +3,7 @@
 	20.6.2017
 	PPP chapter03
 	chapter03_exercise operators.cpp
-	simple program lo exercise operators
+	simple program to exercise operators
 */
 
 #include "stdafx.h"
