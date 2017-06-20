@@ -1,4 +1,4 @@
-﻿Build started 20.06.2017 13.05.39.
+﻿Build started 20.06.2017 18.54.36.
      1>Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter02 Hello, World!\Hello World\Hello World\Hello World.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Hello World.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.11
+Time Elapsed 00:00:01.14
