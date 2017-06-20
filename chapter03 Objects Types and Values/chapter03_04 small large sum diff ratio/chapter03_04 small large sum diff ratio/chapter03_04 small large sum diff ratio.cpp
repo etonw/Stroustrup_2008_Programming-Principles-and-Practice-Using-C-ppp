@@ -1,5 +1,11 @@
-// chapter03_04 small large sum diff ratio.cpp : Defines the entry point for the console application.
-//
+/* chapter03_04 small large sum diff ratio.cpp : Defines the entry point for the console application.
+
+Write a program that prompts the user to enter two integer values. Store
+these values in int variables named val1 and vall. Write your program to
+determine the smallest, largest, sum, difference, product, and ratio of
+these values and report them to the user.
+
+*/
 
 #include "stdafx.h"
 #include <iostream>

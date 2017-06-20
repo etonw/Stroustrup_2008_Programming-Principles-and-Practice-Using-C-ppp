@@ -1,5 +1,12 @@
-// chapter03_06_ooutput integers in sequence.cpp : Defines the entry point for the console application.
-//
+/* chapter03_06_ooutput integers in sequence.cpp : Defines the entry point for the console application.
+
+Write a program that prompts the user to enter three integer values, and
+then outputs the values in numerical sequence separated by commas. So,
+if the user enters the values 10 4 6, the output should be 4, 6, 1 0. If two
+values are the same, they should just be ordered together. So, the input 4
+5 4 should give 4, 4, 5.
+
+*/
 
 #include "stdafx.h"
 #include <iostream>   

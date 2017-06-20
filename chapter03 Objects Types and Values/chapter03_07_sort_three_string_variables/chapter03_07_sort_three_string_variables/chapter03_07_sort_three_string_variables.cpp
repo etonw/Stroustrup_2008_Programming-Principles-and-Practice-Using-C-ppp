@@ -1,6 +1,17 @@
-// chapter03_07_sort_three_string_variables.cpp : Defines the entry point for the console application.
-// program gives errors for "eton andrew stacy"
-//
+/* chapter03_07_sort_three_string_variables.cpp : Defines the entry point for the console application.
+program gives errors for "eton andrew stacy"
+
+6. Write a program that prompts the user to enter three integer values, and
+then outputs the values in numerical sequence separated by commas. So,
+if the user enters the values 10 4 6, the output should be 4, 6, 1 0. If two
+values are the same, they should just be ordered together. So, the input 4
+5 4 should give 4, 4, 5.
+
+7. Do exercise 6, but with three string values. So, if the user enters the values
+"Steinbeck", "Hemingway", "Fitzgerald", the output should be
+"Fitzgerald, Hemingway, Steinbeck".
+
+*/
 
 #include "stdafx.h"
 #include <iostream>
