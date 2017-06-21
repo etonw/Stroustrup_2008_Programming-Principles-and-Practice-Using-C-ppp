@@ -13,9 +13,9 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	double val1,val2;
-	double smallest, largest, sum, difference1, difference2, product, ratio1, ratio2; 
-	cout << "Enter TWO integers: :";
+	int val1, val2;
+	int smallest, largest, sum, difference1, difference2, product, ratio1, ratio2; 
+	cout << "(int version) Enter two integers: :";
 	cin >> val1 >> val2;
 	
 	if (val1 > val2) {
@@ -27,7 +27,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			largest = val2;
 	}
 	
-	sum = val1+val2;  // why doesnt this work?
+	sum = val1 + val2;  // why doesnt this work?
 	difference1 = val1 - val2;
 	difference2 = val2 - val1;
 	product = val1 * val2;

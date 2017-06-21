@@ -19,6 +19,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	cin >> miles;
 	kilometers = miles*1.609;
 	cout << "\n" << miles << " miles equals " << kilometers << " kilometers. \n" ;
-	cout << "\nGood-bye \n\n";
+	cout << "\nGood-bye-bye \n\n";
 	return 0;
 }

@@ -1,0 +1,53 @@
+(int version) Enter two integers: :23 65
+
+Smallest number is 23
+
+
+Largest  number is 65
+
+
+Sum is 65
+
+
+Difference1 is -42
+
+
+Difference2 is 42
+
+
+Product is 1495
+
+
+Ratio1 is 0
+
+
+Ratio2 is 2
+
+Press any key to continue . . .
+
+(double version) Enter two integers: :23 65
+
+Smallest number is 23
+
+
+Largest  number is 65
+
+
+Sum is 65
+
+
+Difference1 is -42
+
+
+Difference2 is 42
+
+
+Product is 1495
+
+
+Ratio1 is 0.353846
+
+
+Ratio2 is 2.82609
+
+Press any key to continue . . .
