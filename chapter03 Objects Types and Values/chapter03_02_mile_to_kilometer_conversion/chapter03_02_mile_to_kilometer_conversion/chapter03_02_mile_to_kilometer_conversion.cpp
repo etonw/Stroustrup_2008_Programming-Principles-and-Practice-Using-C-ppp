@@ -1,24 +1,43 @@
-/* chapter03_02_mile_to_kilometer_conversion.cpp : Defines the entry point for the console application.
+/*
+	etonw
+	21.6.2017
+	PPP chapter03
+	chapter03
+	
+	8. Write a program to test an integer value to determine if it is odd or even.
+	As always, make sure your output is clear and complete. In other words,
+	don't just output "yes" or "no." Your output should stand alone, like
+	"The value 4 is an even number." Hint: See the remainder (modulo) operator
+	in §3.4.
 
-Write a program in C++ that converts from miles to kilometers. Your
-program should have a reasonable prompt for the user to enter a number
-of miles. Hint: There are 1 .609 kilometers to the mile.
-
+	NB. TRying to get the code to make it repeatedly take in input like in testing conversions
 
 */
 
 #include "stdafx.h"
-#include <iostream>
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<cmath>
+#include<cstdlib>
+#include<string>
+#include<list>
+#include<vector>
+#include<algorithm>
+#include<stdexcept>
 using namespace std;
+inline void keep_window_open() { char ch; cin>>ch; }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
-	int miles, kilometers;
-	cout << "This program CONVERTS miles to kilometers.\n";
-	cout << "\nEnter a number of miles: ";
-	cin >> miles;
-	kilometers = miles*1.609;
-	cout << "\n" << miles << " miles equals " << kilometers << " kilometers. \n" ;
-	cout << "\nGood-bye-bye \n\n";
-	return 0;
+	int test_subject = 0;
+
+	while(cin >> test_subject){ 
+			cout << "Enter your number to test if even or odd: ";
+		if(test_subject % 2 == 0) 
+			cout << "\n\n" << test_subject << " is an even number \n";
+		else 
+			cout << "\n\n"  << test_subject << " is an odd number \n";
+	
+	}
 }

@@ -1,4 +1,4 @@
-﻿Build started 21.06.2017 13.54.09.
+﻿Build started 6/21/2017 4:07:08 PM.
      1>Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter03 Objects Types and Values\chapter03_unsafe convers pt2\chapter03_unsafe convers pt2\chapter03_unsafe convers pt2.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\chapter03_unsafe convers pt2.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.69
+Time Elapsed 00:00:01.12
