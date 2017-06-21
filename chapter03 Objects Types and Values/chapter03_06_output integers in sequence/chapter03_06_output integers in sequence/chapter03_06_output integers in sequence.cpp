@@ -1,4 +1,4 @@
-/* chapter03_06_ooutput integers in sequence.cpp : Defines the entry point for the console application.
+/* PPP chapter03_06_output integers in sequence.cpp :
 
 Write a program that prompts the user to enter three integer values, and
 then outputs the values in numerical sequence separated by commas. So,
