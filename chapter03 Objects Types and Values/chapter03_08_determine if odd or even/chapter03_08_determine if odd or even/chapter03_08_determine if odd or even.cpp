@@ -39,3 +39,11 @@ int main()
 		cout << "Enter your number to test if even or odd: ";
 	}
 }
+
+/*
+	From BS solution:
+		Note the technique of picking a default value for the result ("even") and changing it only if needed.
+		The alternative would be to use a conditional expression and write
+
+		string res = (val%2) ? "even" : "odd";
+*/
