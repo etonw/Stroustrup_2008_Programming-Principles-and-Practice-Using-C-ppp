@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter04_try_this_switch_currency", "chapter04_try_this_switch_currency\chapter04_try_this_switch_currency.vcxproj", "{68D78DA4-94ED-474D-8969-CCB39CBA5E0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D78DA4-94ED-474D-8969-CCB39CBA5E0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68D78DA4-94ED-474D-8969-CCB39CBA5E0C}.Debug|Win32.Build.0 = Debug|Win32
+		{68D78DA4-94ED-474D-8969-CCB39CBA5E0C}.Release|Win32.ActiveCfg = Release|Win32
+		{68D78DA4-94ED-474D-8969-CCB39CBA5E0C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
