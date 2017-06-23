@@ -1,4 +1,4 @@
-﻿Build started 6/22/2017 6:36:45 PM.
+﻿Build started 6/23/2017 3:54:55 PM.
      1>Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter04 Computation\chapter04_vector_mean_median\chapter04_vector_mean_median\chapter04_vector_mean_median.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\chapter04_vector_mean_median.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -28,4 +28,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.87
+Time Elapsed 00:00:00.84

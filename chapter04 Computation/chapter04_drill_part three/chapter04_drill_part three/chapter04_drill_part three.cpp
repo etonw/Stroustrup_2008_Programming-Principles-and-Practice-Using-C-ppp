@@ -1,7 +1,7 @@
 /*
 	etonw
-	22.6.2017
-	PPP chapter04 - computation
+	23.6.2017
+	PPP chapter04 - Computation
 	chapter04_drill_part three.cpp
 	
 	Drill

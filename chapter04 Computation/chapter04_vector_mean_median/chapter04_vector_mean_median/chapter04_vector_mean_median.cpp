@@ -50,8 +50,10 @@ int main()
 	//calculate median value
 	//Sort the vector and then pick the middle value
 	sort(temps.begin(),temps.end());  // sort from beginning to end
-	cout << "Median temperature: " << temps[temps.size()/2] << "\n" << endl;
-	
+
+	// this is more like the middle value
+	cout << "Median temperature: " << temps[temps.size()/2] << "\n" << endl;  
+
 	//print sorted vector values
 	cout << "\nThis is the sorted vector:\n";
 	for (int i=0; i<temps.size(); ++i)	//loop through vector
