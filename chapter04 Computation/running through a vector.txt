@@ -1,0 +1,7 @@
+	
+	//loop through and print vector
+	for (int i=0; i<temps.size(); ++i)	
+			cout << "v[" << i << "]==" << temps[i] << '\n';
+			
+			
+			
