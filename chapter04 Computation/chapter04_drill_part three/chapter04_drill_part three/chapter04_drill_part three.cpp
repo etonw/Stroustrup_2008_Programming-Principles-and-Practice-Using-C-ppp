@@ -43,7 +43,6 @@
 	
 	10. Keep all the values entered (converted into meters) in a vector. At the
 	end, write out those values.
-
 */
 
 #include "stdafx.h"
@@ -75,7 +74,7 @@ int main()
 		 << "( 'cm'=centimeter, 'in'=inch, 'ft'=feet, 'm'=meter ) \n" 
 		 << "End input with '|' \n\n";
 		 
-		
+	//user input values	
 	while(cin >> input >> unit){
 
 		//converting to meters
@@ -88,14 +87,15 @@ int main()
 			is_valid=false;
 		}
 
-		if (is_valid){					  //if the unit is one of the approved
+		if (is_valid)
+		{					  //if the unit is one of the approved
 		meas.push_back(converted_input);  //add to vector element
 		
 			if(is_first){		          //is this the first input?
 			cout << "First input, nothing to compare\n";
 			} else{
 
-				//compare and find largest and smallest values
+				//find largest and smallest values
 				largest = meas[0];					 // set first element as largest
 				for (int i=0; i<meas.size(); ++i){   // run through vector
 					if (largest < meas[i]){			 // test if vector element is larger
@@ -105,8 +105,6 @@ int main()
 				if (converted_input==largest){
 				cout << "      largest value so far \n";
 				}
-
-				//find smallest value
 				smallest = meas[0];					 // set first element as smallest
 				for (int i=0; i<meas.size(); ++i){   // run through vector
 					if (smallest > meas[i]){		 // test if vector element is smaller
@@ -118,14 +116,12 @@ int main()
 				}
 			}
 			is_first=false;  // after one loop in while, no longer first value	
-			is_valid=true;
 			cout << "... \n";
 		}  // end if input is valid
-	}
+	is_valid=true;
+	} // end while
 	
 	// Exiting program.
-	cout << "\nSummary :  \n";
-
 	//smallest value
 	smallest = meas[0];					 // assume first element is smallest
 	for (int i=0; i<meas.size(); ++i){   // run through vector
@@ -133,8 +129,6 @@ int main()
 				smallest= meas[i];       // set new smallest
   		}
     }	
-	cout << "Smallest value is: "<< smallest << " m.\n";
-		
 	//largest value
 	largest = meas[0];					 // assume first element is largest
 	for (int i=0; i<meas.size(); ++i){   // run through vector
@@ -142,22 +136,23 @@ int main()
 				largest= meas[i];		 // set new largest
   		}
     }
-	cout << "Largest value is: "<< largest << " m.\n";
-
-	//number of values in vector
-	cout << "Number of measurements is: "<< meas.size() << ". \n";
-
 	//sum of values in vector
 	for (int i=0; i<meas.size(); ++i){
 			sum+=meas[i];
 	}
+
+	cout << "\nSummary :  \n";
+	cout << "Smallest value is: "<< smallest << " m.\n";
+	cout << "Largest value is: "<< largest << " m.\n";
+	cout << "Number of measurements is: "<< meas.size() << ". \n";
 	cout << "Total length measured is : "<< sum << " m.\n\n";
 
 	//Sort and Print vectors
 	cout << "Table of measurements \n";
 	sort(meas.begin(), meas.end());
 	for (int i=0; i<meas.size(); ++i)
-		cout << "meas[" << i << "] " << meas[i] << " m\n";
+	cout << "meas[" << i << "] " << meas[i] << " m\n";
+
 }// end 
 
 
