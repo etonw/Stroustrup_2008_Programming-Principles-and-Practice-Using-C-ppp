@@ -63,42 +63,150 @@ inline void keep_window_open() { char ch; cin>>ch; }
 int main()
 {
 	//declare and initialize
-	double number=0, input=0, input_converted=0, smallest=0, largest=0, sum=0; 
-	int counter=0;
-	string unit;
-	bool is_valid=true, is_first=true;
+	double input=0, converted_input=0, sum=0, smallest=0, largest=0; 
+	string unit = " ";
+	vector <double> meas;    // empty vector
+	bool is_valid=true,	     // valid unit of measurement used
+		 is_first=true;      // is this the first input
 
-	cout << "Program start. \n" 
-		 << "Enter your distance, followed by space, followed its unit. \n"
+	//Introduction and Prompt
+	cout << "Program start. \n"
+		 << "Enter [Distance] [space] [Unit of Measurement] \n"
 		 << "( 'cm'=centimeter, 'in'=inch, 'ft'=feet, 'm'=meter ) \n" 
-		 << "End input with '|' \n";
+		 << "End input with '|' \n\n";
+		 
+		
+	while(cin >> input >> unit){
 
-	while(cin>>input>>unit){
-		if (unit="cm") input_converted = input/100;
-		else if (unit="in") input_converted = input*0.0254;
-		else if (unit="ft") input_converted = input*12*0.0254;
-		else if (unit="m") input_converted = input;
+		//converting to meters
+		if (unit=="cm") converted_input = input/100;
+		else if (unit=="in") converted_input = input*0.0254;
+		else if (unit=="ft") converted_input = input*12*0.0254;
+		else if (unit=="m") converted_input = input;
 		else  {
 			cout << "Dont recognize that unit" << endl;
 			is_valid=false;
 		}
-	
-		if(is_valid){
-		sum += input_converted;  // total distance so far
-		counter++;
 
-		if(is_first){
+		if (is_valid){					  //if the unit is one of the approved
+		meas.push_back(converted_input);  //add to vector element
 		
-		}
-		}
+			if(is_first){		          //is this the first input?
+			cout << "First input, nothing to compare\n";
+			} else{
+
+				//compare and find largest and smallest values
+				largest = meas[0];					 // set first element as largest
+				for (int i=0; i<meas.size(); ++i){   // run through vector
+					if (largest < meas[i]){			 // test if vector element is larger
+							largest= meas[i];		 // if so, set new largest
+  					}
+				}
+				if (converted_input==largest){
+				cout << "      largest value so far \n";
+				}
+
+				//find smallest value
+				smallest = meas[0];					 // set first element as smallest
+				for (int i=0; i<meas.size(); ++i){   // run through vector
+					if (smallest > meas[i]){		 // test if vector element is smaller
+							smallest= meas[i];       // if so, set new smallest
+  					}
+				}	
+				if (converted_input==smallest){
+				cout << "      smallest value so far  \n";
+				}
+			}
+			is_first=false;  // after one loop in while, no longer first value	
+			is_valid=true;
+			cout << "... \n";
+		}  // end if input is valid
+	}
+	
+	// Exiting program.
+	cout << "\nSummary :  \n";
+
+	//smallest value
+	smallest = meas[0];					 // assume first element is smallest
+	for (int i=0; i<meas.size(); ++i){   // run through vector
+		if (smallest > meas[i]){		 // test if assumption is wrong
+				smallest= meas[i];       // set new smallest
+  		}
+    }	
+	cout << "Smallest value is: "<< smallest << " m.\n";
 		
-		
-		
-		
-		
-		
-		
-		is_valid=true; // reset value before restarting while loop	
-	}//end while
-		
-}// end main
+	//largest value
+	largest = meas[0];					 // assume first element is largest
+	for (int i=0; i<meas.size(); ++i){   // run through vector
+		if (largest < meas[i]){			 // test if assumption is wrong
+				largest= meas[i];		 // set new largest
+  		}
+    }
+	cout << "Largest value is: "<< largest << " m.\n";
+
+	//number of values in vector
+	cout << "Number of measurements is: "<< meas.size() << ". \n";
+
+	//sum of values in vector
+	for (int i=0; i<meas.size(); ++i){
+			sum+=meas[i];
+	}
+	cout << "Total length measured is : "<< sum << " m.\n\n";
+
+	//Sort and Print vectors
+	cout << "Table of measurements \n";
+	sort(meas.begin(), meas.end());
+	for (int i=0; i<meas.size(); ++i)
+		cout << "meas[" << i << "] " << meas[i] << " m\n";
+}// end 
+
+
+/*
+Program start.
+Enter [Distance] [space] [Unit of Measurement]
+( 'cm'=centimeter, 'in'=inch, 'ft'=feet, 'm'=meter )
+End input with '|'
+
+23 cm
+First input, nothing to compare
+...
+0.2 cm
+      smallest value so far
+...
+56 ft
+      largest value so far
+...
+20 ft
+...
+65 in
+...
+65 m
+      largest value so far
+...
+32 cm
+...
+0.1 cm
+      smallest value so far
+...
+20 ft
+...
+|
+
+Summary :
+Smallest value is: 0.001 m.
+Largest value is: 65 m.
+Number of measurements is: 9.
+Total length measured is : 96.4648 m.
+
+Table of measurements
+meas[0] 0.001 m
+meas[1] 0.002 m
+meas[2] 0.23 m
+meas[3] 0.32 m
+meas[4] 1.651 m
+meas[5] 6.096 m
+meas[6] 6.096 m
+meas[7] 17.0688 m
+meas[8] 65 m
+Press any key to continue . . .
+*/
