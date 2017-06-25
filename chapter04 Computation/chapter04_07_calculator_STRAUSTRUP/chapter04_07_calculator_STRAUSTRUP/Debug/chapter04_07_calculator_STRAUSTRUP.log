@@ -1,0 +1,16 @@
+﻿Build started 6/25/2017 3:16:37 PM.
+     1>Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter04 Computation\chapter04_07_calculator_STRAUSTRUP\chapter04_07_calculator_STRAUSTRUP\chapter04_07_calculator_STRAUSTRUP.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\chapter04_07_calculator_STRAUSTRUP.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\chapter04_07_calculator_STRAUSTRUP.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt chapter04_07_calculator_STRAUSTRUP.cpp
+         chapter04_07_calculator_STRAUSTRUP.cpp
+     1>c:\users\127464\documents\github\stroustrup-ppp\chapter04 computation\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup.cpp(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\127464\documents\github\stroustrup-ppp\chapter04 computation\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup.cpp(125): error C3861: 'error': identifier not found
+     1>c:\users\127464\documents\github\stroustrup-ppp\chapter04 computation\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup\chapter04_07_calculator_straustrup.cpp(131): error C2317: 'try' block starting on line '85' has no catch handlers
+     1>Done Building Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter04 Computation\chapter04_07_calculator_STRAUSTRUP\chapter04_07_calculator_STRAUSTRUP\chapter04_07_calculator_STRAUSTRUP.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.36

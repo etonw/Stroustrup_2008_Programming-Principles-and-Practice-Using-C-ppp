@@ -33,8 +33,8 @@ int main()
 {
 	
 	//declare variables
-	double n1(0),n2(0);
-	char op = ' ';
+	double n1(0),n2(0);  //operands
+	char op = ' ';	     //operation
 
 	//prompt
 	cout << "Simple Calculator. \n"
@@ -57,7 +57,10 @@ int main()
 			cout << "The product of " << n1 << " and " << n2 << " is " << n1*n2 << endl;
 			break;
 		case '/':
-			cout << "The qoutient of " << n1 << " and " << n2 << " is " << n1/n2 << endl;
+			if (n2==0)
+				cout << "No division by zero!";
+			else 
+				cout << "The qoutient of " << n1 << " and " << n2 << " is " << n1/n2 << endl;
 			break;
 		case '%':
 			int n3, n4;

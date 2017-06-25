@@ -61,7 +61,7 @@ int main()
 
 
 	cout << "Program start.\n"
-		<<"Enter a number 1-9 as either a word ('one') or a digit('1')\n";
+		<<"Enter a number (0-9) as either a word ('one') or a digit('1')\n";
 
 	while(cin>>input){
 
