@@ -26,22 +26,31 @@
 using namespace std;
 inline void keep_window_open() { char ch; cin>>ch; }
 
+
+int square(int ); //function declaration. Only needed if function def is after main()
+
+int square(int value)//function defintition
+{
+	int result(0);
+	int multiplier = value;
+	for(int i=0; i<multiplier; ++i)	//calculate square of multiplier
+			result+=multiplier;
+	return result;
+}
+
 int main()
 {
-	double result(0), initial_value(0), multiplier(0);
-	
-	while(2!=3){	// Haha! Way to make a unending loop!
-	cout << "What is the value of x?: ";	//prompt
-	cin>>initial_value;
-	multiplier = initial_value;
-
-		for(int i=0; i<multiplier; ++i){	//calculate square of multiplier
-			result+=multiplier;
-	}
-	cout << "\n" << initial_value << "^2 == " << result << "\n" ;
-	// keep_window_open(); // window must be closed manually
+	int value(0);	
+	while(true){	
+		cout << "What is the value of x?: \n";	//prompt
+		cin>>value;
+		cout <<  "^2 == " << square(value)<< "\n" ;
+		// keep_window_open(); // window must be closed manually
 	}
 }
+
+
+
 
 /*
 NB

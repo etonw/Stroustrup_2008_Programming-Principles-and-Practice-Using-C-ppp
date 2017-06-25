@@ -1,7 +1,7 @@
-﻿Build started 6/22/2017 4:00:24 PM.
+﻿Build started 6/25/2017 6:51:10 PM.
      1>Project "C:\Users\127464\Documents\GitHub\stroustrup-ppp\chapter04 Computation\chapter04_try this _square\chapter04_try this _square\chapter04_try this _square.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\chapter04_try this _square.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\chapter04_try this _square.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\chapter04_try this _square.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "chapter04_try this _square.cpp"
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.75
+Time Elapsed 00:00:00.73
