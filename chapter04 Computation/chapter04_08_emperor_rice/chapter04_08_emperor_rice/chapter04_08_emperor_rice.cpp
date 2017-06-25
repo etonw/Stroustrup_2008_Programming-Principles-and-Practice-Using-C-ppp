@@ -36,7 +36,7 @@ inline void keep_window_open() { char ch; cin>>ch; }
 
 vector<int> records;   // vector to hold the rice records
 
-int doubb (int n)
+int doubb (int n)		//function to perform doubling operation
 {
 	int result=n*2;
 	return result;
