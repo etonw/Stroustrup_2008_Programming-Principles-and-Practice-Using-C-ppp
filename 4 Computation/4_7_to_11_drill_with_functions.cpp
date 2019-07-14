@@ -32,14 +32,14 @@ DRILL
 
 */
 
-void print_smallest(vector<double> v1){
-	double smallest=v1[0];
-	cout << "\n" << smallest << " is the smallest value.\n";
-}
-
 void print_largest(vector<double> v1){
 	double largest=v1[v1.size()-1];
-	cout << "\n" << largest << " is the smallest value.\n";
+	cout << "\nLargest value: " << largest << "m.";
+}
+
+void print_smallest(vector<double> v1){
+	double smallest=v1[0];
+	cout << "\nSmallest value" << smallest << "m.";
 }
 
 void print_vector_sum(vector<double> v1){
@@ -96,8 +96,31 @@ int main(){
 
 }//end main
 
-
-
 /*
-
+Enter a length and its unit,  (|) to end program: 23in                                           
+                                                                                                 
+You entered 23 in = 0.5842m.                                                                     
+345ft                                                                                            
+                                                                                                 
+You entered 345 ft = 105.156m.                                                                   
+2345cm                                                                                           
+                                                                                                 
+You entered 2345 cm = 23.45m.                                                                    
+2m                                                                                               
+                                                                                                 
+You entered 2 m.                                                                                 
+3454feet                                                                                         
+                                                                                                 
+ERROR: illegal unit entered.                                                                     
+|                                                                                                
+                                                                                                 
+Largest value: 105.156m.                                                                         
+Smallest value0.5842m.                                                                           
+Number of values: 4                                                                              
+Sum of lengths recorded: 131.19m.                                                                
+Recorded lengths: 0.5842        2       23.45   105.156                                          
+End of Program.                                                                                  
+                                                                                                 
+...Program finished with exit code 0                                                             
+Press ENTER to exit console.
 */
