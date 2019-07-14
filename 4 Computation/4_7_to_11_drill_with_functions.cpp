@@ -20,32 +20,54 @@ DRILL
 
 6. Now change the body of the loop so that it reads just one double each time around. Define two variables to keep track of which is the smallest and which is the largest value you have seen so far. Each time through the loop write out the value entered. If it’s the smallest so far, write the smallest so far after the number. If it is the largest so far, write the largest so far after the number.
 
+7. Add a unit to each double entered; that is, enter values such as 10cm, 2.5in, 5ft, or 3.33m. Accept the four units: cm, m, in, ft. Assume conversion factors 1m == 100cm, 1in == 2.54cm, 1ft == 12in. Read the unit indicator into a string. You may consider 12 m (with a space between the number and the unit) equivalent to 12m (without a space).
+
+8. Reject values without units or with “illegal” representations of units, such as y, yard, meter, km, and gallons.
+
+9. Keep track of the sum of values entered (as well as the smallest and the largest) and the number of values entered. When the loop ends, print the smallest, the largest, the number of values, and the sum of values. Note that to keep the sum, you have to decide on a unit to use for that sum; use meters.
+
+10. Keep all the values entered (converted into meters) in a vector. At the end, write out those values.
+
+11. Before writing out the values from the vector, sort them (that’ll make them come out in increasing order).
+
 */
 
-
-void print_smallest(vector v1){
-		double smallest=v1[0];
-		cout << "\n" << smallest << " is the smallest value.\n";
+void print_smallest(vector<double> v1){
+	double smallest=v1[0];
+	cout << "\n" << smallest << " is the smallest value.\n";
 }
 
-int main()
-{
+void print_largest(vector<double> v1){
+	double largest=v1[v1.size()-1];
+	cout << "\n" << largest << " is the smallest value.\n";
+}
+
+void print_vector_sum(vector<double> v1){
+	double sum =0;
+		for (double x: v1) {
+			sum+=x;   // add all elements in the vector
+		}//end for 		
+	cout << "\nSum of lengths recorded: " << sum << "m.";
+}
+
+void print_vector_values(vector<double> v1){
+	cout << "\nRecorded lengths: ";		
+	for (double x: v1) cout << x << " \t" ; 
+	cout << "\nEnd of Program.";
+}
+
+int main(){
     vector<double>values;    // empty vector that can hold doubles (DRILL # 10)
-	string unit = " ";
 	double val=0;
 	double converted_value=0;
-	double smallest=0;
-	double largest=0;
-	double sum = 0;
+	string unit = " ";
+
 	// prompt
 	cout << "\n";
 	cout << "Enter a length and its unit,  (|) to end program: " ;	
 	
-
-    while (cin >> val >> unit)
-    {
-        //convert values with correct unit and add to vector
-		
+    while (cin >> val >> unit){
+		//convert values with correct unit and add to vector	
 		if (unit=="cm"){
 			converted_value=val*.01;
 			cout << "\nYou entered " << val << " cm = " << converted_value << "m.\n";
@@ -63,30 +85,14 @@ int main()
 			cout << "\nYou entered " << val << " m.\n";
 			values.push_back(converted_value);
 		} else 	cout << "\nERROR: illegal unit entered.\n" ;
-
 	}//end while
 	
-		//sort vector  ( Drill # 11)
-		sort (values.begin(), values.end() );
-		
-		//determine largest or smallest values and print those
-		smallest=values[0];
-		cout << "\n" << smallest << " is the smallest value.\n";
-		largest=values[values.size()-1];
-		cout << "\n" << largest << " is the largest value.\n";
-		
-		
-		//print number of values
-		cout << "\nNumber of values: " << values.size();
-		
-		//print sum of values
-		for (double x: values) sum +=x;   // add all elements in the vector
-		cout << "\nSum of lengths recorded: " << sum << "m.";		
-		
-		//print all values of the vector
-		cout << "\nRecorded lengths: ";		
-		for (double x: values) cout << x << " \t" ; 
-		cout << "\nEnd of Program.";
+	sort (values.begin(), values.end() );  //sort vector  ( Drill # 11)
+	print_largest(values);			//determine largest or smallest values and print those
+	print_smallest(values);
+	cout << "\nNumber of values: " << values.size();	//print number of values
+	print_vector_sum(values);	//print sum of values
+	print_vector_values(values);	//print all values of the vector
 
 }//end main
 
