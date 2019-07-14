@@ -31,7 +31,6 @@ DRILL
 11. Before writing out the values from the vector, sort them (that’ll make them come out in increasing order).
 */
 
-
 int main()
 {
     vector<double>values;    // empty vector that can hold doubles (DRILL # 10)
@@ -97,5 +96,32 @@ int main()
 
 
 /*
-
+Enter a length and its unit,  (|) to end program: 23 in                                                                    
+                                                                                                                           
+You entered 23 in = 0.5842m.                                                                                               
+34 ft                                                                                                                      
+                                                                                                                           
+You entered 34 ft = 10.3632m.                                                                                              
+345cm                                                                                                                      
+                                                                                                                           
+You entered 345 cm = 3.45m.                                                                                                
+2m                                                                                                                         
+                                                                                                                           
+You entered 2 m.                                                                                                           
+34 feet                                                                                                                    
+                                                                                                                           
+ERROR: illegal unit entered.                                                                                               
+|                                                                                                                          
+                                                                                                                           
+0.5842 is the smallest value.                                                                                              
+                                                                                                                           
+10.3632 is the largest value.                                                                                              
+                                                                                                                           
+Number of values: 4                                                                                                        
+Sum of lengths recorded: 16.3974m.                                                                                         
+Recorded lengths: 0.5842        2       3.45    10.3632                                                                    
+End of Program.                                                                                                            
+                                                                                                                           
+...Program finished with exit code 0                                                                                       
+Press ENTER to exit console.
 */
